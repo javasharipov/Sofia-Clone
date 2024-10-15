@@ -2,9 +2,153 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 50px 0 80px 0;
     h6{
         font-size: 28px;
         font-weight: 400;
         color: #252829;
+    }
+}
+.our__history{
+    display: flex;
+    gap: 50px;
+    padding: 0 16px;
+    .aboutus__image{
+        position: relative;
+        width: 670px;
+        height: 375px;
+        img{
+        width: 670px;
+        height: 370px;
+        border-radius: 20px;
+        }
+    }
+    .aboutus__btn{
+     position: absolute;
+     top: 120px;
+     right: 0;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 140px;
+     height: 140px;
+     border-radius: 50%;
+     background-color: #fff;
+    button{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        color: #fff;
+        background-color: #DCC38B;
+        border: 1px solid transparent;
+        font-size: 16px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: .3s ease-in;
+        &:hover{
+            background-color: #695a39;
+        }
+
+    }
+}
+    .aboutus__image,
+    .our__history__content{
+        width: 50%;
+    }
+}
+.our__history__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h4{
+        font-size: 32px;
+        font-weight: 500;
+        color: #252829;
+        margin-bottom: 24px;
+    }
+    p{
+       font-size: 18px;
+       font-weight: 400;
+       color: #898989;
+       line-height: 30px;
+       margin-bottom: 16px;
+    }
+    img{
+        width: 282px;
+        height: 82px;
+        display: flex;
+       
+    }
+}
+@media (max-width:1540px){
+    .our__history{
+        gap: 20px;
+         .our__history__content{}
+        .aboutus__image{
+            position: relative;
+            img{
+            width: 540px ;
+            height: 303px ;
+            }
+            .aboutus__btn{
+                position: absolute;
+                top: 120px;
+                right: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 140px;
+                height: 140px;
+                border-radius: 50%;
+                background-color: #fff;
+            button{
+            }
+        }
+      }
+    }
+}
+@media (max-width:1494px){
+
+    .our__history{
+       display: flex; 
+       align-items: center;
+       justify-content: center;
+       flex-direction: column-reverse;
+       .our__history__content{
+        h4{
+            text-align: start;
+        }
+        p{
+            text-align: start;
+        }
+        img{
+            display: flex;
+            align-items: start;
+            margin: 0 auto;
+        }
+       }
+       .aboutus__image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+    }
+}
+@media (max-width:730px){
+    .our__history{
+    .aboutus__image{
+         img{
+            border-radius: 20px;
+            width: 200px;
+            height: 250px;
+            object-fit: cover;
+        }
+        .aboutus__btn{
+            display: none;
+        button{
+            display: none;
+        }
+    }
+    }
     }
 }
