@@ -1,0 +1,236 @@
+
+.new__products__title{
+    position: relative;
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    h2{
+        position: absolute;
+        z-index: 101;
+        font-size:28px ;
+        font-weight:400 ;
+        color: #212529;
+        display: inline-block;
+        
+    }
+    .new__products__btns{
+        display: flex;
+        margin-left: 1200px;
+        gap: 30px;
+    button{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #c3d2d3;
+        border: 1px solid transparent;
+        cursor: pointer;
+        transition: .3s ease-in;
+        &:hover{
+            background-color: #89b9bd;
+        }
+
+    }
+}
+
+}
+.wrapper__new__products__card{
+    display: flex;
+    margin-bottom: 160px;
+
+.new__product__card{
+    position: relative;
+    width: 375px;
+    height: 496px;
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    .new__btns{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        background-color: #fff;
+    button{
+        border: 1px solid transparent;
+        cursor: not-allowed;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background-color: #2E2124;
+        color: #fff;
+        font-size: 16px ;
+
+    }
+   }
+   img{
+    border-radius: 50%;
+    margin-bottom: 120px;
+    transition: .200s ease-in;
+   }
+   p{
+     text-align: center;
+     font-size: 18px;
+     font-weight: 400;
+     color: #212529;
+     cursor: pointer;
+     &:hover{
+        text-decoration: underline;
+     }
+   }
+}
+}
+@media (max-width:1535px){
+    .new__product__card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        .new__btns{
+            position: absolute;
+            left: 100px;
+        }
+        img{
+            width: 246px;
+            height: 246px;
+        }
+
+    }
+}
+@media (max-width:1510px){
+    .new__product__card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        .new__btns{
+            position: absolute;
+            top: inherit;
+            left: 100px;
+        }
+        img{
+            width: 246px;
+            height: 246px;
+        }
+
+    }
+}
+@media (max-width:1367px){
+    .new__products__title{
+        .new__products__btns{
+            margin-left: 1000px;
+        }
+    }
+}
+@media (max-width:1159px){
+    .new__products__title{
+        .new__products__btns{
+            margin-left: 800px;
+        }
+    }
+    .new__product__card{
+       display: flex;
+       margin: 0 auto;
+       img{
+        width:343px ;
+        height: 343px ;
+       }
+    }
+    .new__product__card:nth-child(3){
+      display: none;
+      
+    }
+    .new__product__card:nth-child(4){
+      display: none;
+      
+    }
+}
+@media (max-width:951px){
+    .new__products__title{
+        .new__products__btns{
+            margin-left: 600px;
+        }
+    }
+}
+@media (max-width:755px){
+    .wrapper__new__products__card{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+    .new__products__title{
+        position: static;
+        align-items: center;
+        justify-content: space-around;
+        h2{
+            position: static;
+            white-space: nowrap;
+        }
+        .new__products__btns{
+            margin-left: 0;
+
+        }
+    }
+    .new__product__card{
+        img{
+            width: 246px;
+            height: 246px;
+            
+        }
+    }
+}
+@media (max-width:605px){
+    .new__product__card{
+        img{
+            width: 224px;
+            height: 224px;
+        }
+    }
+}
+@media (max-width:540px){
+     .new__product__card:first-child{
+        display: none;
+     }
+    .new__products__title{
+        gap: 0;
+    }
+     .new__product__card{
+        img{
+        width: 346px;
+        height: 346px;
+       } 
+    }
+    
+}
+
+@media (max-width:475px){
+    .new__products__title{
+        h2{
+            font-size: 20px;
+        }
+        gap: 50px;
+     .new__products__btns{
+        gap: 20px;
+     }
+    }
+}
+@media (max-width:375px){
+    .new__products__title{
+        h2{
+            font-size: 20px;
+        }
+        gap: 50px;
+     .new__products__btns{
+        gap: 10px;
+     }
+    }
+    .new__product__card{
+        img{
+            width: 260px ;
+            height: 260px ;
+        }
+    }
+}

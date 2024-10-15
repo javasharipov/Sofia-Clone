@@ -1,0 +1,111 @@
+.cakes__content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2{
+        font-size: 28px;
+        font-weight: 400;
+        color: #2E2124;
+        margin-bottom: 50px;
+    }
+
+}
+.cakes__wrappper__card{
+    display: flex;
+    margin-bottom: 100px;
+    .cakes__card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 375px;
+        height: 496px;
+        padding: 0 16px;
+        img{
+            width: 342px;
+            height: 343px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        h5{
+            font-size: 18px;
+            color: #000;
+            font-weight: 400;
+            cursor: pointer;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        p{
+            font-size: 16px;
+            font-weight: 400;
+            color: #898989;
+            text-align: center;
+            margin: 40px 0 14px 0;
+            width: 343px;
+        }
+        strong{
+            font-size: 18px;
+            font-weight: 400;
+            color: #212529;
+        }
+    }
+}
+
+@media (max-width:1535px){
+    .cakes__card{
+        img{
+            width: 246px;
+            height: 246px;
+        }
+    }
+}
+@media (max-width:1159px){
+    .cakes__card{
+        display: flex;
+        margin: 0 auto;
+        img{
+         width:343px ;
+         height: 343px ;
+        }
+     }
+     .cakes__card:nth-child(3){
+       display: none;
+       
+     }
+     .cakes__card:nth-child(4){
+       display: none;
+       
+     }
+}
+@media (max-width:605px){
+    .cakes__content{
+        .new__products__btns{
+            display: inline-block;
+        }
+    }
+    .cakes__card{
+        img{
+            width: 224px;
+            height: 224px;
+        }
+    }
+}
+@media (max-width:540px){
+    .cakes__card:first-child{
+       display: none;
+    }
+    .cakes__card{
+       img{
+       width: 346px;
+       height: 346px;
+      } 
+   }
+}
+@media (max-width:410px){
+    .cakes__card{
+        img{
+            width: 326px;
+            height: 326px;
+        }
+    }
+}
