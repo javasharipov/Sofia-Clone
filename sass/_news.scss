@@ -1,0 +1,60 @@
+
+.news__content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2{
+        font-size: 28px;
+        color: #252829;
+        font-weight: 400;
+        margin-bottom: 100px;
+
+    }
+}
+.news__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 26px;
+    margin-bottom: 140px;
+   
+.news__card{
+    width: 380px;
+    height: 380px;
+    object-fit: contain;
+    position: relative;
+    img{
+   width: 380px;
+   height: 380px;
+   border-radius: 50%;
+      }
+      .aboutus__btn{
+        position: absolute;
+        top: 110px;
+        left: 110px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        border-radius: 50%;
+        
+         width: 160px;
+         height: 160px;
+         button{
+         width: 140px;
+         height: 140px;
+         border-radius: 50%;
+         background-color: #DCC38B ;
+         transition: .3s ease-in;
+         cursor: pointer;
+         border: 1px solid transparent;
+         font-size: 16px;
+         color: #fff;
+         font-weight: 700;
+         &:hover{
+            background-color: #d99d1d ;
+         }
+      }
+   }
+ }
+}
